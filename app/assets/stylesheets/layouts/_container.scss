@@ -1,3 +1,5 @@
+@use "../mixins/media" as *;
+
 .container {
   width: 100%;
   padding-right: var(--space-xs);
@@ -11,3 +13,4 @@
     max-width: 60rem;
   }
 }
+
