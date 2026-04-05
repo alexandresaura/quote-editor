@@ -1,3 +1,5 @@
+@use "../mixins/media" as *;
+
 .quote {
   display: flex;
   justify-content: space-between;
@@ -21,3 +23,4 @@
     gap: var(--space-xs);
   }
 }
+

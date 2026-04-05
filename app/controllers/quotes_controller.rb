@@ -1,6 +1,5 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [ :show, :edit, :update, :destroy ]
-  before_action -> { sleep 3 }
 
   def index
     @quotes = Quote.all

@@ -53,4 +53,4 @@ This is a Rails 8.1 app with a single `Quote` resource (name field). The stack u
 
 **Testing:** Minitest with parallel workers. System tests use Selenium + headless Chrome at 1400×1400 via `test/application_system_test_case.rb`.
 
-**Note:** `QuotesController` has a `before_action -> { sleep 3 }` intentionally slowing all actions — likely for Turbo progress bar demonstration.
+**CSS imports** use `@use` (not `@import`) — Sass `@import` is deprecated. Each partial that uses a mixin must declare its own `@use`.
