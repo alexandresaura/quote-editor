@@ -9,19 +9,27 @@
   text-decoration: none;
   cursor: pointer;
   outline: none;
-  transition: filter 400ms, color 200ms;
+  transition:
+    filter 400ms,
+    color 200ms;
 
   &:hover,
   &:focus,
   &:focus-within,
   &:active {
-    transition: filter 250ms, color 200ms;
+    transition:
+      filter 250ms,
+      color 200ms;
   }
 
   // Modifiers will go there
   &--primary {
     color: var(--color-white);
-    background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-rotate));
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary),
+      var(--color-primary-rotate)
+    );
 
     &:hover,
     &:focus,
@@ -34,7 +42,11 @@
 
   &--secondary {
     color: var(--color-white);
-    background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary-rotate));
+    background-image: linear-gradient(
+      to right,
+      var(--color-secondary),
+      var(--color-secondary-rotate)
+    );
 
     &:hover,
     &:focus,
@@ -71,3 +83,4 @@
     }
   }
 }
+
