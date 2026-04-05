@@ -1,19 +1,17 @@
-// Mixins
-@import "mixins/media";
-
 // Configuration
-@import "config/variables";
-@import "config/reset";
+@use "config/variables";
+@use "config/reset";
 
 // Components
-@import "components/btn";
-@import "components/error_message";
-@import "components/form";
-@import "components/visually_hidden";
-@import "components/quote";
+@use "components/btn";
+@use "components/error_message";
+@use "components/form";
+@use "components/visually_hidden";
+@use "components/quote";
 
 // Layouts
-@import "layouts/container";
-@import "layouts/header";
+@use "layouts/container";
+@use "layouts/header";
 
-@import "components/turbo_progress_bar";
+@use "components/turbo_progress_bar";
+
