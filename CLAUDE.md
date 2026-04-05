@@ -39,6 +39,17 @@ bin/bundler-audit              # Gem vulnerability audit
 bin/ci                         # Full local CI run
 ```
 
+**Git hooks (local setup, run once after cloning):**
+
+```bash
+echo '#!/bin/sh
+bin/rubocop && bin/bundler-audit && bin/brakeman --no-pager --quiet
+' > .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+Runs rubocop, bundler-audit, and brakeman before every commit. Tests are left to CI.
+
 ## Architecture
 
 This is a Rails 8.1 app with a single `Quote` resource (name field). The stack uses:
