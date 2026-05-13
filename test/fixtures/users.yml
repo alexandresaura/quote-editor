@@ -1,0 +1,17 @@
+<% password_digest = BCrypt::Password.create("password") %>
+
+accountant:
+  company: kpmg
+  email_address: accountant@kpmg.com
+  password_digest: <%= password_digest %>
+
+manager:
+  company: kpmg
+  email_address: manager@kpmg.com
+  password_digest: <%= password_digest %>
+
+eavesdropper:
+  company: pwc
+  email_address: eavesdropper@pwc.com
+  password_digest: <%= password_digest %>
+

@@ -20,10 +20,18 @@
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+    <%= javascript_include_tag "application",
+    "data-turbo-track": "reload",
+    type: "module" %>
   </head>
 
   <body>
+    <%= render "layouts/navbar" %>
+
+    <div id="flash" class="flash">
+      <%= render "layouts/flash" %>
+    </div>
+
     <%= yield %>
   </body>
 </html>
